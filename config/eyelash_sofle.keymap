@@ -71,6 +71,13 @@
             bindings = <&kp LS(R) &kp LS(R) &kp MINUS &kp LS(J) &kp LS(D) &kp SPACE &kp LPAR &kp LC(SEMICOLON) &kp RIGHT_PARENTHESIS &kp COLON>;
             label = "RR_JD_DATE";
         };
+
+        MVA_NA_NoneSet: MVA_NA_NoneSet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp SQT &kp MINUS &kp LS(N) &kp FSLH &kp LS(A) &kp MINUS &kp LS(N) &kp O &kp N &kp E &kp SPACE &kp S &kp E &kp T &kp DOT>;
+            label = "MVA_NA_NONESET";
+        };
     };
 
     keymap {
@@ -98,7 +105,7 @@
 &kp C_MUTE       &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Layer 1";
             sensor-bindings = <&scroll_encoder>;
         };
 
